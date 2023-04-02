@@ -1,9 +1,23 @@
-import React from 'react'
+import React from 'react';
+import { SketchPicker } from 'react-color';
+import { useSnapshot } from 'valtio';
+
+import state from '../store';
 
 const ColorPicker = () => {
-  return (
-    <div>ColorPicker</div>
-  )
-}
+  const snap = useSnapshot(state);
 
-export default ColorPicker
+  return (
+    <div className="absolute left-full ml-3">
+      <SketchPicker
+        color={snap.color}
+        disableAlpha
+        // for custon preset colors
+        // presetColors={['#e63946', '#f1faee', '#a8dadc', '#457b9d', '#1d3557']}
+        onChange={(color) => (state.color = color.hex)}
+      />
+    </div>
+  );
+};
+
+export default ColorPicker;
