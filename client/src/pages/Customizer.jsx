@@ -38,9 +38,29 @@ const Customizer = () => {
           />
         );
       case 'aipicker':
-        return <AIPicker />;
+        return (
+          <AIPicker
+            prompt={prompt}
+            setPrompt={setPrompt}
+            generatingImg={generatingImg}
+            handleSubmit={handleSubmit}
+          />
+        );
       default:
         return null;
+    }
+  };
+
+  const handleSubmit = async (type) => {
+    if (!prompt) return alert('Please enter a prompt');
+
+    try {
+      // call our backend to generate an ai image!
+    } catch (error) {
+      alert(error);
+    } finally {
+      setGeneratingImg(false);
+      setActiveEditorTab;
     }
   };
 
@@ -73,8 +93,8 @@ const Customizer = () => {
       return {
         ...prevState,
         [tabName]: !prevState[tabName],
-      }
-    })
+      };
+    });
   };
 
   const readFile = (type) => {
