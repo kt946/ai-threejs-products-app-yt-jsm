@@ -1,5 +1,7 @@
 # AI Three.js T-Shirt Designer JSM
 
+![screenshot-hompage](https://user-images.githubusercontent.com/103476893/229616090-eefa8d30-4410-4a9f-a6ae-6d0306dbab45.png)
+
 ## Description
 
 This project was built using a tutorial by [JavaScript Mastery](https://www.youtube.com/watch?v=ZqEa8fTxypQ) on youtube.
@@ -35,6 +37,9 @@ This is a 3D T-Shirt Designer application where users can design their own T-shi
 
 ## Screenshots
 
+![screenshot-homepage2](https://user-images.githubusercontent.com/103476893/229616205-5e647999-403e-432a-b189-32c93abbc505.png)
+
+![screenshot-customizer](https://user-images.githubusercontent.com/103476893/229616217-5a054c15-f901-4b70-a9a5-d582b231c66d.png)
 
 ## Technologies Used
 
