@@ -23,9 +23,15 @@ This is a 3D T-Shirt Designer application where users can design their own T-shi
 
 1. Clone the repository.
 2. Install the dependencies in both the client and server folders by running `npm install`.
-3. Start the client by running `npm run dev`.
-4. Start the server by running `npm start`.
-5. Navigate to http://localhost:8080 to view the project.
+3. Create a .env file in the server folder and add the following environment variables:
+
+```
+OPENAI_API_KEY
+```
+
+4. Start the client by running `npm run dev`.
+5. Start the server by running `npm start`.
+6. Navigate to http://localhost:8080 to view the project.
 
 ⭐ Note: An active OpenAI api key is required for the AI funtionality to work.
 
